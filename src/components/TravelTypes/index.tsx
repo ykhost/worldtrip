@@ -1,4 +1,4 @@
-import { Box, Flex, HStack, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import { Flex, useBreakpointValue } from "@chakra-ui/react";
 import { Grid, GridItem } from '@chakra-ui/react'
 import { Types } from "./Types";
 
@@ -7,16 +7,17 @@ export function TravelTypes(){
   return(
     <Flex
       justifyContent="center"
-      mt="20"
+      mt={["1rem","20"]}
       mx="auto"
-      maxWidth={1280}
-      padding={"2rem"}
+      maxWidth={[275,1280]}
+      padding={["0","2rem"]}
       width={"100%"}
     >
       <Grid
         templateColumns={["1fr 1fr","1fr 1fr","1fr 1fr","repeat(5, 1fr)"]}
         w="100%"
         justifyContent="space-between"
+        justifyItems="space-around"
         alignItems="center"
         mt={["10","32"]}
         mx="auto"
