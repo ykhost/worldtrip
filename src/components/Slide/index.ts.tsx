@@ -9,10 +9,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 import { Flex, Heading, Text } from "@chakra-ui/react";
 import Link from "next/link";
+import { City } from "./City";
 
 export function Slide() {
   return (
-    <Flex w="100%" height={"28.125rem"} maxW={"77.5rem"} mx="auto" mb={"10"}  mt={"3.25rem"}>
+    <Flex w="100%" height={["15.62rem","28.125rem"]} maxW={"77.5rem"} mx="auto" mb={"10"}  mt={"3.25rem"}>
       <Swiper
         slidesPerView={1}
         navigation={true}
@@ -39,10 +40,14 @@ export function Slide() {
               textAlign="center"
               bgPosition="center"
             >
-              <Heading fontSize={"3rem"} color="gray.50">Europa</Heading>
-              <Text fontSize={"1.25rem"} color="gray.50" fontWeight="bold">O continente mais antigo.</Text>
+              <Heading fontSize={["1.25rem","3rem"]} color="gray.50">Europa</Heading>
+              <Text fontSize={["0.85rem","1.25rem"]} color="gray.50" fontWeight="bold">O continente mais antigo.</Text>
             </Flex>
           </Link>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <City href="europe" bgImage="europe" description="Pa e bola nas europa" city="Guainazes"/>
         </SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
       </Swiper>

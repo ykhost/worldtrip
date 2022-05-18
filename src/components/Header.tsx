@@ -5,12 +5,12 @@ export function Header() {
     <Flex
       as="header"
       w="100%"
-      h="24"
+      h={["3.125rem","2.875rem"]}
       mx="auto"
       alignItems="center"
       justifyContent="center"
     >
-      <Img src="https://i.imgur.com/MZur60c.png" objectFit='cover'/>
+      <Img h={["1.25rem", ]}  src="https://i.imgur.com/MZur60c.png" objectFit='cover'/>
     </Flex>
   )
 }
